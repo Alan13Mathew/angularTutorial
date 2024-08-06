@@ -1,0 +1,44 @@
+<div class="productComponentWrapper">
+    <h2>Products List</h2>
+    <div class="inputWrapper">
+        Search: <input type="text" placeholder="enter product name"
+        (keyup)="search()" [(ngModel)]="searchKey">
+        <button (click)="selectAdvance()">Advanced Filter</button>
+        @if(selectedDiv){
+            <div class="advFilter">
+                <span>Filter by price: <input type="text" [(ngModel)]=" searchPrice" (keyup)="searchByprice()"></span>
+                <span>Filter by MFG date: <input type="text" [(ngModel)]="searchMfg" (keyup)="searchByMfg()"></span>
+            </div>
+        }
+    </div>
+    
+@if(products.length != 0){
+    <div>
+        <table>
+            <tr>
+                <th>Sl.No</th>
+                <th>Name</th>
+                <TH>Price</TH>
+                <TH>MFG.Date</TH>
+                <TH>Exp.Date</TH>
+                <TH>Description</TH>
+                <th>Action</th>
+            </tr>
+            @for(element of products; track element; let i=$index){
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{element.name}}</td>
+                <td>{{element.price}}</td>
+                <td>{{element.mfg}}</td>
+                <td>{{element.exp}}</td>
+                <td>{{element.desc}}</td>
+                <td><button id="remove" (click)="deleteProduct(i)">Remove</button></td>
+            </tr>
+        }
+        </table>
+    </div>
+    
+}
+
+</div>
+

@@ -1,0 +1,49 @@
+.inputWrapper{
+    border: 1px solid greenyellow;
+    margin: 30px;
+    padding: 10px;
+}
+.productComponentWrapper{
+    border: 1px solid red;
+    text-align: center;
+    table,td,th,tr{
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 5px;
+        padding: 5px;
+    }
+
+}
+.advFilter{
+    border: 1px solid blue;
+    margin: 10px 20vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    input{
+        margin: 10px;
+    }
+}
+
+#remove{
+    cursor: pointer;
+    color: red;
+}
+#remove:hover{
+    color: rgba(195, 103, 50, 0.729);
+}
+.addProduct{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid violet;
+    margin: 10px;
+    padding: 10px;
+    button{
+        margin: 20px;
+        cursor: pointer;
+        background-color: aquamarine;
+    }
+    button:hover{
+        background-color: rgb(255, 0, 0);
+    }
+}
