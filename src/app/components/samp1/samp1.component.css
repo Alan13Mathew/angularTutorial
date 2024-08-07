@@ -1,0 +1,14 @@
+.contentWrapper{
+    margin: 10px 5px;
+    border: 1px solid blue;
+    a{
+        margin: 10px;
+    }
+    div{
+        border: 1px solid blue;
+        margin: 5px;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: center;
+    }
+}
