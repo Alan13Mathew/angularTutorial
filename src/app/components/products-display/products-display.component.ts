@@ -2,11 +2,12 @@ import { Component, OnChanges } from '@angular/core';
 import { Product } from '../../models/product';
 import { ProductDataService } from '../../services/product-data.service';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-products-display',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,RouterLink],
   templateUrl: './products-display.component.html',
   styleUrl: './products-display.component.css'
 })

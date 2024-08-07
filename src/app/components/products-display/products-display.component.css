@@ -3,6 +3,11 @@
     margin: 30px;
     padding: 10px;
 }
+.productsDisplayWrapper{
+    display: flex;
+    justify-content: center;
+    border: 1px solid blue;
+}
 .productComponentWrapper{
     border: 1px solid red;
     text-align: center;
